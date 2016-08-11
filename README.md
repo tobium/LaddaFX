@@ -1,7 +1,11 @@
 # LaddaFX
 JavaFX port of Ladda for HTML/CSS (http://lab.hakim.se/ladda/)
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/JAhmbOIq0AY/0.jpg)](http://www.youtube.com/watch?v=JAhmbOIq0AY "LaddaFX Demo")
+2
+
+A UI concept which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing.
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/iZOVJi-5ZVg/0.jpg)](http://www.youtube.com/watch?v=iZOVJi-5ZVg "LaddaFX 0.2.0 Demo")
 
 
 # Usage via Code
@@ -23,7 +27,7 @@ button.setInProgress(false);
 <dependency>
     <groupId>com.ultramixer</groupId>
     <artifactId>laddafx</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
