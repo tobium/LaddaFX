@@ -17,6 +17,7 @@ import javafx.css.StyleableDoubleProperty;
 import javafx.css.StyleableProperty;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.ProgressIndicator;
@@ -150,6 +151,10 @@ public class LaddaButton extends Button
         {
             setContentDisplay(ContentDisplay.BOTTOM);
         }
+        else if (style.equals(LaddaButtonStyle.CONTRACT))
+        {
+            setContentDisplay(ContentDisplay.TEXT_ONLY);
+        }
     }
 
     public LaddaButtonStyle getLaddaButtonStyle()
@@ -214,6 +219,17 @@ public class LaddaButton extends Button
             );
             tt.setDelay(Duration.millis(0));
             tt.play();
+        }
+        else if(getLaddaButtonStyle().equals(LaddaButtonStyle.CONTRACT))
+        {
+            progressIndicator.setPrefWidth(24);
+          //  setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+            setGraphic(progressIndicator);
+            //setPadding(new Insets(0,0,0,0));
+
+            ContractTransition t = new ContractTransition(this);
+            t.play();
+
         }
 
     }

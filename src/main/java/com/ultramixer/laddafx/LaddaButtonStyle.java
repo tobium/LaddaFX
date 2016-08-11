@@ -9,5 +9,6 @@ public enum LaddaButtonStyle
     EXPAND_LEFT(),
     EXPAND_RIGHT(),
     EXPAND_UP(),
-    EXPAND_DOWN();
+    EXPAND_DOWN(),
+    CONTRACT();
 }
